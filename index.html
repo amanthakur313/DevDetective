@@ -1,0 +1,55 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DevDetective</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body class="light">
+  <div class="container">
+    <header class="app-header">
+      <h1>DevDetective</h1>
+      <button id="theme-toggle" class="theme-toggle">
+        <img id="theme-icon" src="assets/images/moon-icon.png" alt="Toggle Theme" />
+      </button>
+    </header>
+
+    <section class="search-bar">
+      <input type="text" id="search-input" placeholder="Enter GitHub username..." />
+      <button id="search-btn">Search</button>
+    </section>
+
+    <section class="card hidden" id="profile">
+      <div class="card-header">
+        <img id="avatar" class="avatar" src="" alt="Profile Picture" />
+        <div class="user-info">
+          <h2 id="name">Name</h2>
+          <p id="username">@username</p>
+          <p id="join-date">Joined date</p>
+        </div>
+      </div>
+      <p id="bio" class="bio">User bio here</p>
+
+      <div class="stats">
+        <div><span id="repos">0</span><p>Repos</p></div>
+        <div><span id="followers">0</span><p>Followers</p></div>
+        <div><span id="following">0</span><p>Following</p></div>
+      </div>
+
+      <div class="links">
+        <p><strong>🌍 Location:</strong> <span id="location">N/A</span></p>
+        <p><strong>🐦 Twitter:</strong> <span id="twitter">N/A</span></p>
+        <p><strong>🔗 Website:</strong> <span id="website">N/A</span></p>
+        <p><strong>🏢 Company:</strong> <span id="company">N/A</span></p>
+      </div>
+    </section>
+
+    <p id="error" class="error hidden">User not found 😢</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
